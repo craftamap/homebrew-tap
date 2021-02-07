@@ -1,0 +1,15 @@
+name: Test pluploader recipe
+
+on: push
+
+jobs:
+  test-pluploader:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Install formula 
+        run: brew install ./pluploader.rb
+      - name: test pluploader
+        run: pluploader --version
