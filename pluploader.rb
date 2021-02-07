@@ -1,8 +1,8 @@
 class Pluploader < Formula
   include Language::Python::Virtualenv
 
-  desc ""
-  homepage ""
+  desc "CLI Confluence/Jira Plugin uploader"
+  homepage "https://github.com/livelyapps/pluploader"
   url "https://files.pythonhosted.org/packages/f6/12/402831d561970745fa79b5e8e95b7c448b96274d57df5217f95ee41e22a1/pluploader-0.6.0.tar.gz"
   sha256 "46668f3ff22188f3e0e90bc15ed262351063fe8e7d95155a76fcdf41024ab292"
 
