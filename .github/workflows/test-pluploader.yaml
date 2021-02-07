@@ -1,6 +1,9 @@
 name: Test pluploader recipe
 
-on: push
+on: 
+  push:
+    paths:
+      - 'pluploader.rb'
 
 jobs:
   test-pluploader:
