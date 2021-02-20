@@ -3,8 +3,8 @@ class Pluploader < Formula
 
   desc "CLI Confluence/Jira Plugin uploader"
   homepage "https://github.com/livelyapps/pluploader"
-  url "https://files.pythonhosted.org/packages/f6/12/402831d561970745fa79b5e8e95b7c448b96274d57df5217f95ee41e22a1/pluploader-0.6.0.tar.gz"
-  sha256 "46668f3ff22188f3e0e90bc15ed262351063fe8e7d95155a76fcdf41024ab292"
+  url "https://files.pythonhosted.org/packages/e6/d1/a1ccfe78e130f57b1db9c7b9e96b085055f1e9e12529735fa8835e39596f/pluploader-0.7.0.tar.gz"
+  sha256 "6b90b82feac8f781f3dbbf8105c2a52b982b3bc0e801ed690186fd02b156839f"
 
   depends_on "python3"
 
@@ -38,19 +38,14 @@ class Pluploader < Formula
     sha256 "5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"
   end
 
-  resource "coloredlogs" do
-    url "https://files.pythonhosted.org/packages/5a/6d/1796dc260bfd8be7c9ecd9c17e02b5b2ad9ba310983cc4ceabc1ea4dbb42/coloredlogs-14.3.tar.gz"
-    sha256 "7ef1a7219870c7f02c218a2f2877ce68f2f8e087bb3a55bd6fbaa2a4362b4d52"
+  resource "commonmark" do
+    url "https://files.pythonhosted.org/packages/60/48/a60f593447e8f0894ebb7f6e6c1f25dafc5e89c5879fdc9360ae93ff83f0/commonmark-0.9.1.tar.gz"
+    sha256 "452f9dc859be7f06631ddcb328b6919c67984aca654e5fefb3914d54691aed60"
   end
 
   resource "ConfigArgParse" do
-    url "https://files.pythonhosted.org/packages/bb/79/3045743bb26ca2e44a1d317c37395462bfed82dbbd38e69a3280b63696ce/ConfigArgParse-1.2.3.tar.gz"
-    sha256 "edd17be986d5c1ba2e307150b8e5f5107aba125f3574dddd02c85d5cdcfd37dc"
-  end
-
-  resource "debugpy" do
-    url "https://files.pythonhosted.org/packages/37/de/abe2de1fe37afbb367999ac7398a34e054de7362c143f345920ae420f8a7/debugpy-1.2.1.zip"
-    sha256 "3157a64db960dab322c4be6a44df3427ed965e4b618daba0c96cf71c13b82b61"
+    url "https://files.pythonhosted.org/packages/3f/75/ca907906cd6c4c7097a037f7adaee36b3f32a08b66baed51b86d1fcc6398/ConfigArgParse-1.3.tar.gz"
+    sha256 "0428b975ab6c48bb101ccb732e1b5cb616296e28268e032aa806f32b647a1cc1"
   end
 
   resource "furl" do
@@ -61,11 +56,6 @@ class Pluploader < Formula
   resource "html5lib" do
     url "https://files.pythonhosted.org/packages/ac/b6/b55c3f49042f1df3dcd422b7f224f939892ee94f22abcf503a9b7339eaf2/html5lib-1.1.tar.gz"
     sha256 "b2e5b40261e20f354d198eae92afc10d750afb487ed5e50f9c4eaf07c184146f"
-  end
-
-  resource "humanfriendly" do
-    url "https://files.pythonhosted.org/packages/31/0e/a2e882aaaa0a378aa6643f4bbb571399aede7dbb5402d3a1ee27a201f5f3/humanfriendly-9.1.tar.gz"
-    sha256 "066562956639ab21ff2676d1fda0b5987e985c534fc76700a19bd54bcb81121d"
   end
 
   resource "idna" do
@@ -98,6 +88,11 @@ class Pluploader < Formula
     sha256 "213125b7e9e64713d16d988d10997dabc6a1f73f3991e1ff8e35ebb1409c7dc9"
   end
 
+  resource "Pygments" do
+    url "https://files.pythonhosted.org/packages/19/d0/dec5604a275b19b0ebd2b9c43730ce39549c8cd8602043eaf40c541a7256/Pygments-2.8.0.tar.gz"
+    sha256 "37a13ba168a02ac54cc5891a42b1caec333e59b66addb7fa633ea8a6d73445c0"
+  end
+
   resource "pyparsing" do
     url "https://files.pythonhosted.org/packages/c1/47/dfc9c342c9842bbe0036c7f763d2d6686bcf5eb1808ba3e170afdb282210/pyparsing-2.4.7.tar.gz"
     sha256 "c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1"
@@ -113,24 +108,29 @@ class Pluploader < Formula
     sha256 "27973dd4a904a4f13b263a19c866c13b92a39ed1c964655f025f3f8d3d75b804"
   end
 
+  resource "rich" do
+    url "https://files.pythonhosted.org/packages/6a/d2/c8a097b27269ec7e759c9f6b505c35750602ed00d832034ab1dd90629c4d/rich-9.11.1.tar.gz"
+    sha256 "86a157008d17c73ee03da80de91e09fc2f7713109ccd4e90496eeb3702bef638"
+  end
+
   resource "six" do
     url "https://files.pythonhosted.org/packages/6b/34/415834bfdafca3c5f451532e8a8d9ba89a21c9743a0c59fbd0205c7f9426/six-1.15.0.tar.gz"
     sha256 "30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259"
   end
 
   resource "soupsieve" do
-    url "https://files.pythonhosted.org/packages/58/5d/445e21e92345848305eecf473338e9ec7ed8905b99ea78415042060127fc/soupsieve-2.1.tar.gz"
-    sha256 "6dc52924dc0bc710a5d16794e6b3480b2c7c08b07729505feab2b2c16661ff6e"
-  end
-
-  resource "tqdm" do
-    url "https://files.pythonhosted.org/packages/69/50/9f29874d835945b845812799edc732ba30c41e9d20431f9f69c8ffb9c670/tqdm-4.56.0.tar.gz"
-    sha256 "fe3d08dd00a526850568d542ff9de9bbc2a09a791da3c334f3213d8d0bbbca65"
+    url "https://files.pythonhosted.org/packages/54/b9/1584ee0cd971ea935447c87bbc9d195d981feec446dd0af799d9d95c9d86/soupsieve-2.2.tar.gz"
+    sha256 "407fa1e8eb3458d1b5614df51d9651a1180ea5fedf07feb46e45d7e25e6d6cdd"
   end
 
   resource "typer" do
     url "https://files.pythonhosted.org/packages/d5/74/40abdad73bc8b5b17a5a6e442fc57b20f5cc2ee869632625083762490de6/typer-0.3.2.tar.gz"
     sha256 "5455d750122cff96745b0dec87368f56d023725a7ebc9d2e54dd23dc86816303"
+  end
+
+  resource "typing-extensions" do
+    url "https://files.pythonhosted.org/packages/16/06/0f7367eafb692f73158e5c5cbca1aec798cdf78be5167f6415dd4205fa32/typing_extensions-3.7.4.3.tar.gz"
+    sha256 "99d4073b617d30288f569d3f13d2bd7548c3a7e4c8de87db09a9d29bb3a4a60c"
   end
 
   resource "urllib3" do
