@@ -5,24 +5,24 @@
 class Bb < Formula
   desc "inoffical Bitbucket.org command line tool "
   homepage "https://siegelfabian.de/"
-  version "0.3.1"
+  version "0.4.0"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/craftamap/bb/releases/download/v0.3.1/bb_0.3.1_Darwin_x86_64.tar.gz"
-    sha256 "322b97311312fb69631e4922c12ee92215245974b2c19c9caf7f7c22beee2db0"
+    url "https://github.com/craftamap/bb/releases/download/v0.4.0/bb_0.4.0_Darwin_x86_64.tar.gz"
+    sha256 "769b0144a9e01fef04c513d97a3072714be25fe754d6cba65c596741a44fa4a5"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/craftamap/bb/releases/download/v0.3.1/bb_0.3.1_Darwin_arm64.tar.gz"
-    sha256 "c55d4c12c6806d9a9692c7e1f2c7fa7bef934fd30c30ec4b2b6a5f97cd486264"
+    url "https://github.com/craftamap/bb/releases/download/v0.4.0/bb_0.4.0_Darwin_arm64.tar.gz"
+    sha256 "ca7ca4892e3a35b614265b409d10bb563704d4288c09b4892e5205ca6361a906"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/craftamap/bb/releases/download/v0.3.1/bb_0.3.1_Linux_x86_64.tar.gz"
-    sha256 "44108e913ec436d1ee5989e94abe13a258331efe2756b46f3c4587a63f9ebc88"
+    url "https://github.com/craftamap/bb/releases/download/v0.4.0/bb_0.4.0_Linux_x86_64.tar.gz"
+    sha256 "7572ad481406739b47403733886d63c463f601cc811fc4a68f8db9a140d91b9f"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/craftamap/bb/releases/download/v0.3.1/bb_0.3.1_Linux_arm64.tar.gz"
-    sha256 "61c8e01f04297005d4ab490a955d44cc594ee38cfe42f9706ee34c064247ffa7"
+    url "https://github.com/craftamap/bb/releases/download/v0.4.0/bb_0.4.0_Linux_arm64.tar.gz"
+    sha256 "2d0a56efcad5d622e10871fafc143708f0aff05f99cbf3a1330081d123115c62"
   end
 
   def install
