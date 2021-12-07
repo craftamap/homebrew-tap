@@ -6,7 +6,6 @@ class Bb < Formula
   desc "inoffical Bitbucket.org command line tool "
   homepage "https://siegelfabian.de/"
   version "0.5.0"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
